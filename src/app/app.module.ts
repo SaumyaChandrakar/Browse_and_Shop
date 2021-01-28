@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/Forms';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './Components/Shared/header/header.component';
+
 import { NavigationComponent } from './Components/Shared/navigation/navigation.component';
 import { FooterComponent } from './Components/Shared/footer/footer.component';
 import { ClothingComponent } from './Components/Categories/clothing/clothing.component';
@@ -15,14 +15,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { Cart1Component } from './Components/cart1/cart1.component';
 import { Cart2Component } from './Components/cart2/cart2.component';
 import { RegComponent } from './Components/reg/reg.component';
-import { L1Component } from './Components/l1/l1.component'; 
+import { L1Component } from './Components/l1/l1.component';
+import { SearchComponent } from './search/search.component'; 
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     NavigationComponent,
     FooterComponent,
     ClothingComponent,
@@ -33,6 +33,7 @@ import { L1Component } from './Components/l1/l1.component';
     Cart2Component,
     RegComponent,
     L1Component,
+    SearchComponent,
     
   ],
   imports: [

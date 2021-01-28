@@ -60,7 +60,7 @@ div.desc {
    <img id="img"   src= "assets\img\{{y.image }}"/>
    <li style="text-align: center;">{{y.pname}}</li>
    <li style="text-align: center;">Rs {{y.price}}</li>
-    <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" routerLink="/cart1">
+    <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart(y.pname,y.image,y.price)" routerLink="/cart1" >
   </p> 
  
 </div>

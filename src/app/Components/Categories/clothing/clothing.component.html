@@ -55,15 +55,22 @@ div.desc {
 
 <div>
 
-<div class="gallery">
+ <div class="gallery">
   <p *ngFor="let y of obj">
-   <img id="img"   src= "assets\img\{{y.image }}"/>
+   <img id="img"   src= "assets\img\{{y.image}}"/>
+   <!-- <input type="radio" value="" name="cloth" [(ngModel)]="y.pid"> -->
    <li style="text-align: center;">{{y.pname}}</li>
    <li style="text-align: center;">Rs {{y.price}}</li>
-    <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" routerLink="/cart1" >
+    <!-- <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart()" routerLink="/cart1">  -->
+    <img id="cart" src="assets\img\cart_icon.png" (click)="addtocart(y.pname,y.image,y.price)" routerLink="/cart1"> 
+    
   </p> 
  
-</div>
+</div> 
+
+
+<!-- 
+<app-cart1 [cartdetails]="PushtoCart"></app-cart1> -->
 </div>
 
 

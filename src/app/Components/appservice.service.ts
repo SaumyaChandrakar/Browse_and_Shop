@@ -7,6 +7,8 @@ import { C2imodel } from '../c2imodel';
 import { C2omodel } from '../c2omodel';
 import { Pomodel } from '../pomodel';
 import { Pimodel } from '../pimodel';
+import { Lomodel } from '../lomodel';
+import { Limodel } from '../limodel';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +31,7 @@ export class AppServiceService {
   postFunctionCall(x:Imodel):Observable<Omodel>
   {
     console.log("hey this is post at work")
-    let url:string ="http://localhost:6070/ar";
+    let url:string ="http://localhost:6080/arreg";
     return this.y.post<Omodel>(url,x);
   }
 
@@ -37,7 +39,7 @@ export class AppServiceService {
   postcart2functionCall(x:C2imodel):Observable<C2omodel>
   {
     console.log("hey this is post at work")
-    let url:string ="http://localhost:6070/arcart2";
+    let url:string ="http://localhost:6080/arcart2";
     return this.y.post<C2omodel>(url,x);
   }
 
@@ -45,7 +47,14 @@ export class AppServiceService {
   {
     console.log("product service is working");
     console.log(cid);
-    let url:string="http://localhost:6070/ms" ;
+    let url:string="http://localhost:6080/ms" ;
     return this.y.post<Pomodel[]>(url,cid);
   }
+
+CheckLogin(x:Limodel):Observable<Lomodel>
+{
+  console.log("hey login worked")
+  let url:string ="http://localhost:6080/login";
+  return this.y.post<Lomodel>(url,x);
+}
 }

@@ -7,20 +7,32 @@ ul {
   margin:0;
   padding: 7px;
   overflow:visible;
-
 }
-
+     
 li {
  float:left;
  
 }
 
-li a {
+li /* a {
   display:inline-block;
   padding: 8px;
-  background-color: rgb(245, 239, 239);
+  
   color:rgb(49, 24, 24);
   
+}
+ */
+ a:link, a:visited {
+  background-color:rgb(247, 189, 178);
+  color:black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+   background-color:white; 
 }
 
 .dropdown {
@@ -32,31 +44,32 @@ li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+   background-color: white;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  background-color:white;
+  padding: 10px 12px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content .category:hover {background-color: #ddd;}
+ .dropdown-content .category:hover {background-color: #ddd;}  
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;background-color:white; }
 
-.dropdown:hover .category {background-color: rgb(238, 204, 230);}
-
+/* .dropdown:hover .category {background-color: rgb(238, 204, 230);}  */
+.dropdown:hover .category {background-color:white;}
 </style>
 </head>
 <body>
 
 
-<ul style="background-color:mistyrose; ">
+<ul>
   <li><a href="Home">Home</a></li>
   <li>
   <div class="dropdown">
@@ -68,9 +81,15 @@ li a {
     </div>
   </div>
   </li>
-  <li><a href="Search">Search</a></li>
+  <!-- <li>
+    <div class="search-container">
+        <input type="text" placeholder="Search.." name="search">
+      <input type="button" (click)="Search()" rou>Search
+    </div> 
+  </li> -->
   <li><a href="cart1">Cart</a></li>
-  <li style="float:right"><a href="l1">Login</a></li>
+  <img style="background-color: whitesmoke; margin: auto;padding: 3px;display: block;margin-left: auto;margin-right:50%;" src="assets\img\Logo.png">
+  <li style="right:3%;position: absolute;top:2.5%"><a href="l1">Logout</a></li>
 </ul>
 <nav>
   <a routerLinkActive="active" routerLink="/Search"></a>

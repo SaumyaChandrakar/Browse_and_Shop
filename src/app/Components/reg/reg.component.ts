@@ -24,12 +24,12 @@ export class RegComponent implements OnInit {
 constructor(private so:AppServiceService)
   { 
     this.obj1=new Imodel();
-    this.obj1.Reg_Id="";
-    this.obj1.Name="";
-    this.obj1.Email_id="";
-    this.obj1.Address="";
-    this.obj1.Mobile_no="";
-    this.obj1.Password="";
+    this.obj1.regid="";
+    this.obj1.name="";
+    this.obj1.emailid="";
+    this.obj1.address="";
+    this.obj1.mobileno="";
+    this.obj1.password="";
    
   }
 
@@ -65,7 +65,10 @@ constructor(private so:AppServiceService)
  );
  }
 
-
+close()
+{
+  
+}
 
   
 
