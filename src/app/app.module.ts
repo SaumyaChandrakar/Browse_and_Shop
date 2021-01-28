@@ -31,6 +31,7 @@ import { L1Component } from './Components/l1/l1.component';
    Cart1Component,
     Cart2Component,
     RegComponent,
+    
     L1Component
     
   ],
