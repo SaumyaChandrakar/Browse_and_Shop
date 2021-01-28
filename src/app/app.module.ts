@@ -27,6 +27,7 @@ import { L1Component } from './Components/l1/l1.component';
     ClothingComponent,
     AccessoriesComponent,
     ElectronicsComponent,
+    
     HomeComponent,
    Cart1Component,
     Cart2Component,
