@@ -61,7 +61,7 @@ cmsg()
    
       this.abc = "";
        
-      alert("your order is confirmed")
+      // alert("your order is confirmed")
  }
  this.com.sendDetailToOrder(this.obj1);  
     }

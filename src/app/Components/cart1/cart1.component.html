@@ -184,8 +184,8 @@
             <td class="col-md-1 text-center"><input type="text" [(ngModel)]='obj.price'><strong></strong></td>
             <!-- <td class="col-md-1 text-center"><<input type="text" [(ngModel)]='obj.price *obj.quantity'>-<strong>{{obj.price *obj.quantity}}</strong></td> -->
              <td class="col-md-1">
-              <button type="submit" class="btn btn-danger" (click)="cm()">
-                <span class="glyphicon glyphicon-remove"></span> ok
+              <button type="submit" (click)="cm()">
+                 ok
               </button>
             </td> 
           
@@ -203,7 +203,7 @@
             <td>   </td>
             <td>   </td>
             <td>
-              <button type="button" class="btn btn-default" routerLink='/home'>
+              <button type="button" class="btn btn-default" routerLink='/Home'>
                 <span class="glyphicon glyphicon-shopping-cart"  ></span> Continue Shopping
               </button>
             </td>

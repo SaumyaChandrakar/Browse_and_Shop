@@ -95,8 +95,8 @@ ngOnInit()
    console.log(dt);
 
    this.obj.pname=dt.pname;
-   this.obj.image=dt.price;
-   this.obj.price=dt.image;
+   this.obj.image=dt.image;
+   this.obj.price=dt.price;
    this.obj.quantity=dt.quantity;
    
  

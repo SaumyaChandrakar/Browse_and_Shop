@@ -32,7 +32,7 @@ export class AppServiceService {
   cartToDb(x:ProductToCart):Observable<Carttodb>
   {
     console.log("hey this is post at work")
-    let url:string ="http://localhost:4444/acart";
+    let url:string ="http://localhost:6080/acart";
     return this.y.post<Carttodb>(url,x);
   }
 
@@ -47,7 +47,7 @@ export class AppServiceService {
   postcart2functionCall(x:C2imodel):Observable<C2omodel>
   {
     console.log("hey this is post at work")
-    let url:string ="http://localhost:6080/arcart2";
+    let url:string ="http://localhost:6080/armcart";
     return this.y.post<C2omodel>(url,x);
   }
 
