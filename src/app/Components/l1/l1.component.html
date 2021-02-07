@@ -1,12 +1,12 @@
-<div class="limiter">
+<!-- <body  >
+<div class="limiter" > 
 
-    <div class="container-login100">
-        
-  <div class="row">
-  
-  
+    <div class="container-login100" style="background-image:url('assets/img/loginpage1.jpg');">
+      
+  <div class="row" >
+ 
   <div class="col" style="font-size: 75px; font-weight:bolder;font-family: cursive;font-style: italic; color:black;text-align: center;">
-    <p>Welcome Browse & Shop </p>
+    <p> Browse & Shop </p>
    </div> 
   </div>
   
@@ -53,58 +53,43 @@
         </div>
     </div>
   </div>
-  <!-- <div class="limiter">
+</body>
+  -->
 
-    <div class="container-login100">
-        
-  <div class="row">
   
-  
-  <div class="col" style="font-size: 75px; font-weight: bold; color:azure;text-align: center;">
-    <p>Welcome Browse & Shop </p>
-   </div> 
-  </div>
-  
-  <div class="wrap-login100">
-  
-            <div class="login100-pic js-tilt mt-3" data-tilt>
-  
-                <img src="assets\images\login-logo.png" alt="IMG">
-            </div>
-            <form class="login100-form validate-form">
-               
-                <span class="login100-form-title" style="font-size: 30px;">
-                    
-                    <b>Login</b>
-                </span>
-  
-                <div class="wrap-input100 validate-input" data-validate = "User Id is required">
-                    <input class="input100" type="text" name="UserID" placeholder="User-ID">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
-                    </span>
-                </div>
-  
-                <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                    <input class="input100" type="password" name="pass" placeholder="Password">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <i class="fa fa-lock" aria-hidden="true"></i>
-                    </span>
-                </div>
-  
-                <div class="container-login100-form-btn">
-                    <button (click)='reg()' class="login100-form-btn">
-                        Login
-                    </button>
-                </div>
-  
-                <div class="text-center p-t-12">
-                  <button >Forgot Password?</button> 
-                  <button type="button" style.display='block' style="width:auto" routerLink='/reg'>Sign Up</button>
-                </div>
-            </form>
-        </div>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Browse & Shop</h2>
+      <label>
+        <span>Email</span>
+        <input type="email" name="emailid"  [(ngModel)]="obj1.emailid"/>
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password"    name="password"  [(ngModel)]="obj1.password"/>
+      </label>
+    
+      <button type="button" class="submit"  (click)="Login()">Sign In</button>
+
     </div>
-  </div> -->
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img__text m--up">
+          <h2>New here?</h2>
+          <p>Sign up</p>
+        </div>
+        <div class="img__text m--in">
+          <h2>One of us?</h2>
+          <p>If you already has an account, just sign in.</p>
+        </div>
+        <div class="img__btn" routerLink='/reg'>SignUp</div>
+      </div>
+    </div>
+
+  
+   <a href="https://dribbble.com/shots/3306190-Login-Registration-form" target="_blank" class="icon-link"> 
+    <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+  </a>
+  <a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
+    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+  </a>

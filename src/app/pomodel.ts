@@ -5,6 +5,7 @@ export class Pomodel {
    pname:string;
    image:string;
    price:number;
+   quantity:number;
    /* constructor(pid:string,pname:string,image:string,price:number)
    {
        this.pid=pid;

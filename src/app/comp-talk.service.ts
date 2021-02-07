@@ -21,4 +21,12 @@ export class CompTalkService
     this.es.next(ptc);
     console.log(ptc);
 }
+sendProdToOrder(z:any)
+{
+  this.es.next(z);
+}
+sendDetailToOrder(z:any)
+{
+  this.es.next(z);
+}
 }

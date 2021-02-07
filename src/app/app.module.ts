@@ -16,6 +16,7 @@ import { Cart1Component } from './Components/cart1/cart1.component';
 import { Cart2Component } from './Components/cart2/cart2.component';
 import { RegComponent } from './Components/reg/reg.component';
 import { L1Component } from './Components/l1/l1.component';
+import { OrderlistComponent } from './orderlist/orderlist.component';
 
 
 
@@ -31,7 +32,8 @@ import { L1Component } from './Components/l1/l1.component';
    Cart1Component,
     Cart2Component,
     RegComponent,
-    L1Component
+    L1Component,
+    OrderlistComponent
     
   ],
   imports: [

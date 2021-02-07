@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 
 
-  export class L1Component  {
+  export class L1Component implements OnInit {
 
     event:any="";
      
@@ -21,7 +21,7 @@ import { Router } from '@angular/router';
     
   
    
-  constructor(private so:AppServiceService,private route: Router,)
+  constructor(private so:AppServiceService,private route: Router)
     { 
       this.obj1=new Limodel();
    
@@ -60,7 +60,8 @@ import { Router } from '@angular/router';
    
     }
    
-   
+    ngOnInit() {
+    }
    
   
 

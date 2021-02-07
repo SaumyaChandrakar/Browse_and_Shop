@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { C2imodel } from 'src/app/c2imodel';
 import { C2omodel } from 'src/app/c2omodel';
+import { CompTalkService } from 'src/app/comp-talk.service';
+import { ProductToCart } from 'src/app/product-to-cart';
 import { AppServiceService } from '../appservice.service';
 
 @Component({
@@ -11,7 +13,7 @@ import { AppServiceService } from '../appservice.service';
 export class Cart2Component implements OnInit {
 
  
-  
+  obj:ProductToCart;
 
   event:any="status";
    
@@ -22,7 +24,7 @@ export class Cart2Component implements OnInit {
   abc:any="";
  
  
-constructor(private so:AppServiceService)
+constructor(private so:AppServiceService,private com:CompTalkService,)
   { 
     this.obj1=new C2imodel();
     this.obj1.cid="";
@@ -61,8 +63,8 @@ cmsg()
        
       alert("your order is confirmed")
  }
-       
-}
+ this.com.sendDetailToOrder(this.obj1);  
+    }
 ,(error)=>{
   this.event ="ajax failed some issue in contacting";
   

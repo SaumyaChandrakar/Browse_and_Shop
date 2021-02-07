@@ -9,12 +9,14 @@ import { Pomodel } from '../pomodel';
 import { Pimodel } from '../pimodel';
 import { Lomodel } from '../lomodel';
 import { Limodel } from '../limodel';
+import { ProductToCart } from '../product-to-cart';
+import { Carttodb } from '../carttodb';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AppServiceService {
-
+ 
   constructor(private y:HttpClient) { }
 
  
@@ -27,6 +29,12 @@ export class AppServiceService {
 
   // }
 
+  cartToDb(x:ProductToCart):Observable<Carttodb>
+  {
+    console.log("hey this is post at work")
+    let url:string ="http://localhost:4444/acart";
+    return this.y.post<Carttodb>(url,x);
+  }
 
   postFunctionCall(x:Imodel):Observable<Omodel>
   {
