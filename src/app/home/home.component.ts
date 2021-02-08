@@ -11,10 +11,5 @@ stat:any="ok";
 
   ngOnInit() {
   }
-  addtocart()
-{
-  
- this.stat="added to cart";
- 
-}
+
 }
